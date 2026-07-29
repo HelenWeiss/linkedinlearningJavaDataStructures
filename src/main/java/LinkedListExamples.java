@@ -36,7 +36,7 @@ public class LinkedListExamples {
     // Add the newWord to the words list at the given index
     static LinkedList<String> updateLinkedList(LinkedList<String> words, String newWord, int index) {
         // Your code goes here.
-        words.add(2, "Earth");
+        words.add(index, newWord);
         return words;
     }
 
