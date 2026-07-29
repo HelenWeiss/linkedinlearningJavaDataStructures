@@ -1,5 +1,7 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedListExamples {
 
@@ -20,6 +22,9 @@ public class LinkedListExamples {
 
         shoppingList.addLast("sweet cherry");
         System.out.println(shoppingList);
+
+        List<String > synchronizedShoppingList = Collections.synchronizedList(shoppingList);
+        System.out.println(synchronizedShoppingList);
 
         // 2. Exercise LinkedList -> Planets
         // This is how your code will be called.
